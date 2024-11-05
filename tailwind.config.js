@@ -1,9 +1,13 @@
+// tailwind.config.js
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',  // Path to your React files
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    require('daisyui'),  // DaisyUI plugin
+    require('@tailwindcss/line-clamp'),  // Line-clamp plugin
+  ],
+};
